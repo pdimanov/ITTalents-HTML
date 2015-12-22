@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Task 1</title>
+	</head>
+	
+	<body>
+		<h1>Add Employee</h1>
+		<form action="addEmployee.php" method="post">
+			<table>
+				<tr>
+					<td>First name:</td>
+					<td>
+						<input name="first_name"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Last name:</td>
+					<td>
+						<input name="last_name" />
+					</td>
+				</tr>
+				<tr>
+					<td>Title:</td>
+					<td>
+						<input name="title" />
+					</td>
+				</tr>
+				<tr>
+					<td>Title of courtesy:</td>
+					<td>
+						<input type="radio" name="courtesy" value="Dr" id="Dr"/>
+						<label for="Dr">Dr. </label>
+						
+						<input type="radio"  name="courtesy" value="Mr" id="Mr"/>
+						<label for="Mr">Mr. </label>
+						
+						<input type="radio"  name="courtesy" value="Mrs" id="Mrs"/>
+						<label for="Mrs">Mrs. </label>
+						
+						<input type="radio"  name="courtesy" value="Ms" id="Ms"/>
+						<label for="Ms">Ms. </label>
+					</td>
+				</tr>
+				<tr>
+					<td>Birth date:</td>
+					<td>
+						<input type="date" name="birth_date"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Hire date:</td>
+					<td>
+						<input type="date" name="hire_date"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td>
+						<input type="text" name="address"/>
+					</td>
+				</tr>
+				<tr>
+					<td>City:</td>
+					<td>
+						<input type="text" name="city"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Region:</td>
+					<td>
+						<input type="text" name="region"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Postal Code:</td>
+					<td>
+						<input type="text" name="postal_code"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Country:</td>
+					<td>
+						<input type="text" name="country"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Home Phone:</td>
+					<td>
+						<input type="tel" name="phone_number"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Extension:</td>
+					<td>
+						<input type="text" name="extension"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Notes:</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea name="notes" cols="38" rows="4"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>Manager:</td>
+					<td>
+						<select name="manager">
+							<option value="goshko">Goshko</option>
+							<option value="petkan">Petkan</option>
+							<option value="donald_duck">Donald Duck</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>
+						<input type="password" name="password"/>
+					</td>
+				</tr>
+				<tr>
+					<td>Repeat password:</td>
+					<td>
+						<input type="password" name="repeat_password"/>
+					</td>
+				</tr>
+			</table>
+			
+			<button type="submit" value="Add">Add Employee</button>
+		</form>
+	</body>
+</html>
